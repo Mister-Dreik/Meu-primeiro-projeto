@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
 
 :root {
-    --cor-primaria: #454545;
+    --cor-primaria: black;
     --cor-secundaria: #FF6000;
     --cor-terciaria: #FF0000;
     --cor-hover: #B0A4A4;
@@ -21,10 +21,12 @@ body{
 }
 .cabecalho{
     padding: 2% 0% 0% 15%;
+
 }
 .cabecalho__menu{
     display: flex;
     gap: 80px;
+    
 }
 .cabecalho__menu__link{
     font-family: var(--fonte-secundaria);
@@ -32,6 +34,14 @@ body{
     font-weight: 600;
     color: var(--cor-terciaria);
     text-decoration: none;
+    padding: 1%;
+    border: 2px solid var(--cor-secundaria);
+    border-radius: 15.5%;
+    justify-content: space-between;
+   
+}
+.cabecalho__menu__link:hover{
+    background-color: var(--cor-hover);
 }
 .apresentacao{
     padding: 5% ;
@@ -61,8 +71,7 @@ body{
 .apresentacao__conteudo__texto__about{
     font-size: 1.5rem;
     font-family: var(--fonte-secundaria);
-    color: black;
-
+    color: var(--cor-secundaria)
 }
 
 .apresentacao__links{
@@ -98,7 +107,9 @@ body{
 .apresentacao__imagem{
     width: 50%;
     border-radius: 20% 0 20% 0 ;
-    border-color: orangered;
+    border: 2px solid var(--cor-secundaria);
+    
+
 }
 .rodape{
     color: black;
